@@ -1,0 +1,14 @@
+{
+    "Legs": [
+        {"name": "Exercise1", "url": "exerciseImages/exerciseFake1.png"},
+        {"name": "Exercise2", "url": "exerciseImages/exerciseFake2.png"}
+    ],
+    "Push": [
+        {"name": "Exercise3", "url": "exerciseImages/exerciseFake3.png", "gripType": "pronated"},
+        {"name": "Exercise4", "url": "exerciseImages/exerciseFake4.png", "gripType": "supinated"}
+    ],
+    "Pull": [
+        {"name": "Exercise5", "url": "exerciseImages/exerciseFake5.png", "gripType": "pronated"},
+        {"name": "Exercise6", "url": "exerciseImages/exerciseFake6.png", "gripType": "supinated"}
+    ]
+}    

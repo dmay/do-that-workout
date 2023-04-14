@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Workout Generator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF4E6;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+        .set-select {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .set-select button {
+            flex-grow: 1;
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            background-color: #FBCB97;
+            transition: background-color 0.3s;
+        }
+        .set-select button:hover {
+            background-color: #F8A772;
+        }
+        .set-select button.selected {
+            background-color: #F18C50;
+            color: white;
+        }
+        #generate {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #F28E68;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #generate:hover {
+            background-color: #F2784A;
+        }
+        .set {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            border: 2pt solid darkgray;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #FFE4C4;
+            width: 80%;
+        }
+        .set img {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+        }
+        @media (max-width: 767px) {
+            .set {
+                flex-basis: 100%;
+            }
+        }
+    </style>       
+</head>
+<body>
+    <div class="controls">
+        <div class="set-select">
+            <button class="selected" data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+        </div>
+        <button id="generate">Generate</button>
+    </div>    
+    <div id="workoutContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
